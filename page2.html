@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Result</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#efefef;
+text-align:center;
+}
+
+.header{
+background:#1400d8;
+color:white;
+padding:20px;
+font-size:32px;
+font-weight:bold;
+}
+
+img{
+max-width:700px;
+margin-top:30px;
+border-radius:20px;
+}
+
+button{
+background:#1400d8;
+color:white;
+border:none;
+padding:15px 35px;
+font-size:22px;
+border-radius:15px;
+cursor:pointer;
+margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+BACKGROUND REMOVED
+</div>
+
+<img id="previewImage">
+
+<br>
+
+<button id="downloadBtn">
+DOWNLOAD PNG
+</button>
+
+<script>
+
+const image =
+localStorage.getItem("resultImage");
+
+document.getElementById(
+"previewImage"
+).src = image;
+
+document.getElementById(
+"downloadBtn"
+).onclick = function(){
+
+const a =
+document.createElement("a");
+
+a.href = image;
+
+a.download =
+"background_removed.png";
+
+a.click();
+
+};
+
+</script>
+
+</body>
+</html>

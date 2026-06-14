@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SHHA Background Remover</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#efefef;
+}
+
+.header{
+background:#1400d8;
+color:white;
+text-align:center;
+padding:20px;
+font-size:32px;
+font-weight:bold;
+}
+
+.container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:50px;
+}
+
+.left{
+width:40%;
+}
+
+.left h1{
+font-size:45px;
+margin-bottom:20px;
+}
+
+.left p{
+font-size:24px;
+margin:15px 0;
+}
+
+.right{
+width:50%;
+display:flex;
+justify-content:center;
+}
+
+.upload-box{
+width:500px;
+height:500px;
+background:#b18cff;
+border-radius:30px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+#uploadBtn{
+background:#1400d8;
+color:white;
+border:none;
+padding:20px 40px;
+font-size:28px;
+border-radius:20px;
+cursor:pointer;
+}
+
+#uploadBtn:hover{
+opacity:.9;
+}
+</style>
+
+</head>
+<body>
+
+<div class="header">
+SHHA EDITING BACKGROUND REMOVER
+</div>
+
+<div class="container">
+
+<div class="left">
+    <img src="logo.png" width="300">
+
+
+<h1>Free Image Background Remover</h1>
+
+<p>Instantly remove background from any image.</p>
+
+<p>Free HD Download</p>
+
+<p>No Watermark</p>
+
+</div>
+
+<div class="right">
+
+<div class="upload-box">
+
+<input type="file"
+id="fileInput"
+accept="image/*"
+hidden>
+
+<button id="uploadBtn">
+UPLOAD IMAGE
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
